@@ -54,3 +54,12 @@
     font-size: 13px;
     font-weight: 800;
 }
+
+.navbar__optionBasket{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.navbar__basketCount{
+    margin: 0px 8px
+}

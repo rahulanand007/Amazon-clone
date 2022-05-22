@@ -6,12 +6,15 @@ import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 const Navbar = () => {
   return (
     <div className='navbar'>
+
         <img className='navbar__logo' src='http://pngimg.com/uploads/amazon/amazon_PNG11.png'></img>
+
 
         <div className="navbar__search">
             <input className='navbar__searchInput' type="text"/>
             <SearchIcon className='navbar__searchIcon'/>
         </div>
+
 
         <div className="navbar__nav">
             <div className="navbar__option">
@@ -26,10 +29,13 @@ const Navbar = () => {
                 <span className="navbar__optionLineOne">Your</span>
                 <span className="navbar__optionLineTwo">Prime</span>
             </div>
-            <div className="navbar__option">
+            <div className="navbar__optionBasket">
                 <ShoppingBasketIcon className='shoppingBasket'/>
+                <span className="navbar__optionLineTwo navbar__basketCount">0</span>
             </div>
         </div>
+
+
     </div>
   )
 }
