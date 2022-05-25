@@ -2,13 +2,14 @@ import React from 'react'
 import '../styling/Navbar.css'
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div className='navbar'>
-
+        <Link to='/'>
         <img className='navbar__logo' src='http://pngimg.com/uploads/amazon/amazon_PNG11.png'></img>
-
+        </Link>
 
         <div className="navbar__search">
             <input className='navbar__searchInput' type="text"/>
@@ -29,10 +30,12 @@ const Navbar = () => {
                 <span className="navbar__optionLineOne">Your</span>
                 <span className="navbar__optionLineTwo">Prime</span>
             </div>
+            <Link to='/cart'>
             <div className="navbar__optionBasket">
                 <ShoppingBasketIcon className='shoppingBasket'/>
-                <span className="navbar__optionLineTwo navbar__basketCount">0</span>
+                <span className="navbar__optionLineTwo navbar__basketCount">0</span>              
             </div>
+            </Link>
         </div>
 
 

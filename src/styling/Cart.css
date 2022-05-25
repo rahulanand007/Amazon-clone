@@ -1,0 +1,56 @@
+.cart{
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    height: max-content;
+}
+
+.cart__ad{
+    object-fit: contain;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.cart__title{
+    margin-right: 10px;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.cart__left{
+    max-width: 1150px;
+}
+
+.cart__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 350px;
+    height: max-content;
+    padding: 15px;
+    background-color: #f3f3f3;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    width: 100%;
+    
+}
+
+.subtotal__gift{
+    display: flex;
+    align-items: center;
+    margin:5px 0px;
+}
+
+.subtotal__gift>input{
+    margin: 5px;
+}
+
+.subtotal>button{
+    background: #f0c14b;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+}
